@@ -95,6 +95,9 @@ set-default-env PYTHONPATH /app/
 # Experimental post_compile hook.
 source $BIN_DIR/steps/hooks/post_compile
 
+# Django collectstatic support.
+source $BIN_DIR/steps/collectstatic
+
 # ### Fin.
 
 deep-mv $BUILD_DIR $ORIG_BUILD_DIR
